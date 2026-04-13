@@ -1,5 +1,4 @@
-package WeeklyAssignment;
-
+package Assignments;
 
 class Manager extends Employee {
 	double bonus;

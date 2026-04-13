@@ -1,4 +1,4 @@
-mvn package day1;
+package day1;
 
 public class Program1_HelloWorld {
 	public static void main (String[] args) {

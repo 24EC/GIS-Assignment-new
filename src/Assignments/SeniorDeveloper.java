@@ -1,4 +1,4 @@
-package WeeklyAssignment;
+package Assignments;
 
 public class SeniorDeveloper extends Developer{
 	int experience; 

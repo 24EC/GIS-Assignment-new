@@ -1,19 +1,22 @@
 package WeeklyAssignment;
 
-
-
 public class WeeklyAssignments_Progarm3 {
 
 	// Progarm 1: Second Smallest Element
 
 	public static int SecondSmallest(int[] num) {
-		int min = num[0];
-		int smallest2 = num[0];
+//		Arrays.sort(num);
+//		System.out.println(num[1]);
+		int min = Integer.MAX_VALUE;
+		int smallest2 = Integer.MAX_VALUE;
 		for (int i = 1; i < num.length; i++) {
 			if (num[i] < min) {
 				smallest2 = min;
 				min = num[i];
 
+			}
+			else if (num[i]>min && num[i]<smallest2) {
+				smallest2=num[i];
 			}
 
 		}
@@ -23,22 +26,22 @@ public class WeeklyAssignments_Progarm3 {
 	}
 
 	// Program 2: Array is Sorted
-	 
+
 	public static boolean isSorted(int[] num, int n) {
-		
+
 		for (int i = 0; i < num.length - 1; i++) {
-			
+
 			if (num[i] > num[i + 1]) {
 				return false;
 
 			}
 		}
 		return true;
-		
+
 	}
-	
+
 	// Program 3: Move All Zeros to End
-	 
+
 	public static void moveZerosToEnd(int[] arr, int n) {
 	    int count = 0;
 	    for (int i = 0; i < arr.length; i++) {
@@ -59,6 +62,8 @@ public class WeeklyAssignments_Progarm3 {
 		// TODO Auto-generated method stub
 
 		int[] num = {4, 2, 7, 2, 9, 1};
+
+
 		int n1 = num.length;
 		SecondSmallest(num);
 		boolean result = isSorted(num, n1);
@@ -69,9 +74,9 @@ public class WeeklyAssignments_Progarm3 {
 	    System.out.print("\nOriginal array: ");
 	    printArray(arr, n);
 	    moveZerosToEnd(arr, n);
-	    System.out.print("\nModified array: " ); 
+	    System.out.print("\nModified array: " );
 	    printArray(arr, n);
-	    
+
 	}
 
 }

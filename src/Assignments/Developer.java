@@ -1,4 +1,4 @@
-package WeeklyAssignment;
+package Assignments;
 
 public class Developer extends Employee {
 
